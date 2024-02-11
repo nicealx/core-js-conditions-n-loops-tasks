@@ -410,7 +410,7 @@ function rotateMatrix(matrix) {
  *  [-2, 9, 5, -3]  => [-3, -2, 5, 9]
  */
 
-function partition (arr, start, end) {
+function partition(arr, start, end) {
   const pivot = arr[end];
   const res = arr;
   let i = start;
@@ -424,7 +424,7 @@ function partition (arr, start, end) {
 
   [res[i], res[end]] = [res[end], res[i]];
   return i;
-};
+}
 
 function quickSort(arr, start, end) {
   if (start < end) {
@@ -434,7 +434,7 @@ function quickSort(arr, start, end) {
     quickSort(arr, p + 1, end);
   }
   return arr;
-};
+}
 
 function sortByAsc(arr) {
   return quickSort(arr, 0, arr.length - 1);
